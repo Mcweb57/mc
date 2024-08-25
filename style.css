@@ -1,0 +1,12 @@
+body {
+    background-image: url(stif.jpg);
+}
+
+@import url('https://fonts.cdnfonts.com/css/minecraft-4');
+
+.test {
+    font-family: 'Minecraft', sans-serif;
+    font-size: 100px;
+    line-height: 10px;
+    margin-left: 60px;
+}
