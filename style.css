@@ -9,4 +9,29 @@ body {
     font-size: 100px;
     line-height: 10px;
     margin-left: 60px;
+    height: 300px;
+    width: 1000px;
 }
+
+.ss {
+height: 450px;
+position: relative;
+margin-top: 10px;
+left: 60px;
+float:left;
+margin-right: 100px;
+opacity: 1;
+}
+
+.text {
+font-family: 'Minecraft', sans-serif;
+margin-top:10px;
+font-size: 60px;
+}
+
+.data {
+position: absolute;
+left: 350px;
+bottom: 60px;
+}
+
