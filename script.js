@@ -54,6 +54,13 @@ function b() {
     choice();
 }
 
+function c() {
+    if (active) return;
+    document.getElementById("inputWindow").value = text = "";
+    text = "Hope it won't."
+    choice();
+}
+
 
 async function sendA() {
     if(active) return;
@@ -76,13 +83,15 @@ async function sendA() {
     await delay(500);   
     loading();
     await delay(2100);   
-    document.getElementById("resp1").innerHTML = "M: I hope you won't regret your choice.";
+    document.getElementById("resp1").innerHTML = "M: I hope we won't regret your choice.";
  
     txtn = "resp2";
     await delay(500);   
     loading();
     await delay(2100);  
-    document.getElementById("resp2").innerHTML = "M: Everything has <u>consequences.<u/>";
+    document.getElementById(txtn).hidden = true;
+    txtn = "resp3";
+    document.getElementById(txtn).hidden = false;
     stopp = true
 }
 
@@ -108,18 +117,20 @@ async function sendB() {
     await delay(500);   
     loading();
     await delay(2100);   
-    document.getElementById("resp1").innerHTML = "M: I hope you won't regret your choice.";
+    document.getElementById("resp1").innerHTML = "M: I hope we won't regret your choice.";
  
     txtn = "resp2";
     await delay(500);   
     loading();
     await delay(2100);  
-    document.getElementById("resp2").innerHTML = "M: Everything has <u>consequences.</u>";
+    document.getElementById("resp2").innerHTML = "M: Everything has <b>consequences.</b>";
     stopp = true
 }
 
 
 async function welcome() {
+    document.getElementById("resp3").hidden = true;
+
     txtn = "choices1";
     document.getElementById(txtn).hidden = true;
 
@@ -128,14 +139,14 @@ async function welcome() {
     await delay(500);  
     loading();
     await delay(2100);  
-    document.getElementById(txtn).innerHTML = "M: Welcome to the game";
+    document.getElementById(txtn).innerHTML = "M: Hey";
 
     txtn = "txt2";
     document.getElementById(txtn).innerHTML = "";
     await delay(500);  
     loading();
     await delay(2100);  
-    document.getElementById(txtn).innerHTML = "M: Choose wisely.";
+    document.getElementById(txtn).innerHTML = "M: Always choose wisely";
 
     txtn = "txt3";
     document.getElementById(txtn).hidden = true;
