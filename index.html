@@ -3,21 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sory</title>
+    <title>Terminal</title>
     <link rel="stylesheet" href="style.css">
-<link href="https://fonts.cdnfonts.com/css/minecraft-4" rel="stylesheet">
 </head>
-<body>
-    <div class="test">
-    <h1>PRZEPRASZAM</h1>
-    <i>JESTEM ZJEBANY</i>
+<body onload="welcome()">
+
+<div class="terminal">
+    <div class="text-output">
+
+        <div id="txt1" class="tfont"></div>
+        <div id="txt2" class="tfont"></div>
+        <div id="txt3" class="tfont"></div>
+        <div id="choices1" class="tfont">
+                M: Do you take the
+            <u id="sendA" onmouseover="a()" onclick="sendA()">
+                gun</u> 
+                or do you take the
+            <u id="sendB" onmouseover="b()" onclick="sendB()">   
+                food</u>
+        </div>
+
+        <div id="response"></div>
+        <div id="resp1" class="tfont"></div>
+        <div id="resp2" class="tfont"></div>
+
+        <div id="text-input">
+            C:\User\Player><input id="inputWindow" placeholder="_" value="">
+        </div>
+
     </div>
-    <img src="MC.jpg" class="ss">
-    <div class="text">
-    WIESZ TO OD LAT
-    </div>
-    <div class="data">
-    <b>04.10.2020</b>
-    </div>
+</div>
+
+<script src="script.js" defer></script>    
 </body>
 </html>

@@ -1,37 +1,88 @@
+@import url(https://fonts.googleapis.com/css?family=VT323);
+
 body {
-    background-image: url(stif.jpg);
+background-color: rgb(9, 9, 9);
 }
 
-@import url('https://fonts.cdnfonts.com/css/minecraft-4');
+.terminal {
+height: 800px;
+width: 800px;
 
-.test {
-    font-family: 'Minecraft', sans-serif;
-    font-size: 100px;
-    line-height: 10px;
-    margin-left: 60px;
-    height: 300px;
-    width: 1000px;
+margin: auto;
+margin-top : 40px;
+padding: 30px;
+
+border: 0px solid black;
+border-radius: 70px;
+box-shadow: 0px 0px 15px black;
+
+background-color: rgb(4, 4, 4);
+font-family: 'VT323';
 }
 
-.ss {
-height: 450px;
+.text-output {
 position: relative;
-margin-top: 10px;
-left: 60px;
-float:left;
-margin-right: 100px;
-opacity: 1;
+height: 800px;
+width: 800px;
+
+font-size: 32px;
+color: rgb(31, 195, 31);
 }
 
-.text {
-font-family: 'Minecraft', sans-serif;
-margin-top:10px;
-font-size: 60px;
+#text-input {
+position: relative;
+bottom: 0px;
+margin-top: 15px;
 }
 
-.data {
-position: absolute;
-left: 350px;
-bottom: 60px;
+#inputWindow {
+position: relative;
+background-color: rgb(4, 4, 4);
+border: none;
+margin-right: auto;
+width: 510px;
+
+font-size: 32px;
+color: rgb(31, 195, 31);
+font-family: 'VT323';
+caret-color: transparent;
 }
 
+#inputWindow::placeholder {
+color: rgb(31, 195, 31);
+}
+
+#inputWindow:active {
+border: none;
+outline:none;
+}
+
+#inputWindow:focus {
+border: none;
+outline: none;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+u {
+cursor: pointer;
+}
+
+
+#response {
+position: relative;
+font-size: 32px;
+color: rgb(31, 195, 31);
+}
+
+
+.tfont {
+font-size: 32px;
+color: rgb(31, 195, 31);
+font-family: 'VT323';
+position: relative;
+}
